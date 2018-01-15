@@ -1,0 +1,36 @@
+<div class="row">
+  <form [formGroup]="addBookForm">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" dfd formControlName="name" class="form-control" />
+      <!--formControlName="name"  [(ngModel)]="newBook.name"-->
+    </div>
+
+    <div class="form-group">
+      <label for="author">Author</label>
+      <input type="text" formControlName="author" class="form-control" />
+      <!-- formControlName="author"  [(ngModel)]="newBook.author"-->
+    </div>
+
+    <div class="form-group">
+      <label for="isbn">ISBN</label>
+      <input type="text" formControlName="isbn" class="form-control" />
+      <!--  formControlName="isbn"  [(ngModel)]="newBook.isbn"-->
+    </div>
+
+    <div class="form-group">
+      <label for="publish">Publisher</label>
+      <input type="text" formControlName="publisher" class="form-control" />
+      <!-- formControlName="publisher"  [(ngModel)]="newBook.publisher"-->
+    </div>
+
+    <div class="form-group">
+      <label for="year">Year</label>
+      <input type="number" minlength="4" maxlength="4" formControlName="year" class="form-control" />
+      <!-- formControlName="year"  [(ngModel)]="newBook.year"-->
+    </div>
+
+    <button class="btn btn-info" (click)="addNewBook()">Add Book</button>
+
+  </form>
+</div>
